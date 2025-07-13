@@ -1,0 +1,270 @@
+/* 이미지 크기 크게 */
+#intro img {
+  width: 400px;
+  max-width: 90%;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* 타이틀 텍스트 */
+#intro h1 {
+  font-size: 28px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+/* 시작 버튼 */
+#intro button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#intro button:hover {
+  background-color: #c0392b;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+button {
+  padding: 14px 28px;
+  font-size: 16px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+/* 결과 카드 전체 스타일 */
+.result-card {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: #fffefc;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 캐릭터 이미지 */
+.result-card img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+/* 캐릭터 이름 강조 */
+.result-card h2 span {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* 버튼 스타일 */
+.result-card button {
+  margin-top: 30px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.result-card button:hover {
+  background-color: #c0392b;
+}
+.result-description {
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin-top: 20px;
+  white-space: pre-wrap;
+}
+
+.share-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 30px 0 10px;
+}
+
+.share-container button {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.share-container button:hover {
+  background-color: #f8f8f8;
+  border-color: #aaa;
+  transform: translateY(-2px);
+}
+.copy-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.2s ease;
+}
+.copy-button:hover {
+  background-color: #dcdcdc;
+}
+
+
+.retry-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.retry-button:hover {
+  background-color: #c0392b;
+}
+
+/* 반응형 기본 세팅 */
+body {
+  margin: 0;
+  font-family: 'Pretendard', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.result-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.result-image {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.result-description {
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+/* 버튼 공통 스타일 */
+button {
+  background-color: #222;
+  color: white;
+  padding: 12px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 8px 4px;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #444;
+}
+
+/* 공유 컨테이너 */
+.share-container,
+.share-copy,
+.retry-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.copy-button svg,
+.share-container button svg {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* 복사 알림 문구 */
+#copyAlert {
+  text-align: center;
+  font-size: 14px;
+  color: #28a745;
+  margin-top: 5px;
+}
+
+/* 인트로 이미지 반응형 */
+.intro-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+/* 모바일 대응 */
+@media screen and (max-width: 480px) {
+  .result-description {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 90%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .share-container,
+  .share-copy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result-card {
+    padding: 15px;
+  }
+}
