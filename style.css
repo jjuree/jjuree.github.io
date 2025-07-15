@@ -464,3 +464,12 @@ button:hover {
   font-size: 0.95em;
   color: #333;
 }
+.character-item {
+  /* 기존 스타일들... */
+  transition: all 0.3s ease; /* hover 부드럽게 만들기 */
+}
+
+.character-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
