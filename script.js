@@ -188,11 +188,14 @@ function showResult() {
 
       <p id="copyAlert" style="display:none; text-align:center; color:#28a745; font-size:14px; margin-top:5px;">📋 링크가 복사되었습니다!</p>
 
-      <!-- 🔁 다시 테스트하기 버튼 -->
-      <div class="retry-container" style="text-align:center; margin-top: 25px;">
-        <button onclick="restartTest()" class="retry-button">다시 테스트하기</button>
-      </div>
-    </div>
+     <!-- 🔁 다시 테스트하기 + 🔙 처음으로 돌아가기 버튼 -->
+<div class="button-row" style="display: flex; justify-content: center; gap: 12px; margin-top: 25px;">
+  <button onclick="restartTest()" class="retry-button">다시 테스트하기</button>
+  <button onclick="returnHome()" class="retry-button">처음으로 돌아가기</button>
+</div>
+
+
+
   `;
 }
 
@@ -235,6 +238,10 @@ function shareTwitter() {
   const text = encodeURIComponent("🔍 나랑 닮은 더글로리 캐릭터는 누구일까?");
   const url = encodeURIComponent(window.location.href);
   window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");
+}
+
+function returnHome() {
+  window.location.href = "index.html";
 }
 
 
